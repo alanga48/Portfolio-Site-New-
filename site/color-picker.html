@@ -204,86 +204,88 @@
                                 <section class="ux-portfolio-template-intro container ux-template-intro-left">
                                     <div class="two-third-c">
                                         <p>Fortune 50 Company</p>
-                                        <h3 class="portfolio-piece-title">Digital Merchandising Application</h3>
+                                        <h3 class="portfolio-piece-title">Color Picker</h3>
                                         <ul>
-                                            <li>My Role: Product Designer</li>
-                                            <li>Duration: 10+ Months</li>
+                                            <li>My Role: UX Designer</li>
+                                            <li>Duration: 3 Months</li>
                                         </ul>
                                     </div>
                                 </section>
                                 <div class="container post type-post format-standard">
                                     <div class="entry">
-                                        <h2>Introduction</h2>
-                                        <p>This project is a story about the behind-the-scenes of retail. As consumers, online shopping opens us up to a huge and varied world of retail, and a multitude of product data.  But where does all that product data – all those images and descriptions you see on a product’s webpage - come from? How does a large vendor, such as Unilever, distribute their product data to the huge array of retailers who sell their merchandise? And what can we do, as designers, when called to make this exchange as simple and pleasant as possible?</p>
-                                        <p>In 2017, the company I work for sought to release their first externally facing application for digital item setup. Coming from a completely manual process, this project was an opportunity to remove many user pain points while promoting positive business relationships between the company and their external vendor partners. </p>
+                                        <h2>Project Description</h2>
+                                        <p>Design and implementation of a Color Family filter on Fortune 50 company retail site. Two separate Color Family filters were created; one for makeup products in eye, lipstick, blush, and nail polish categories, and another for hair dye.</p>
                                     </div>
                                 </div>
                                 <div class="container post type-post format-standard">
                                     <div class="entry">
                                         <h2>My Role</h2>
-                                        <p>I was responsible for the user research and full design of the application. I produced all design deliverables and ultimately a prototype of the application built on Bootstrap. I also contributed additional artifacts such as training materials, user guides, and email copy. I worked closely with key stakeholders to fully realize their business and pain points, and presented my ideas and prototype to stakeholders on different teams. I worked with a remote but in-house development team to realize the product vision.</p>
+                                        <p>The goal of implementation was to use an algorithm to sort products into the most accurate color families possible with the least amount of manual intervention. I was responsible for defining the color families and worked closely with the developers to make sure the algorithm ultimately yielded the best customer experience on the website. I also created wireframes for the filter design and interactions on the front end website.</p>
                                     </div>
                                 </div>
                                 <div class="container post type-post format-standard">
                                     <div class="entry">
-                                        <h2>Definitions</h2>
-                                        <strong>Digital Merchandising Team:</strong>
-                                        <p>The internal team plans and manages what products are sold on the retail site. This includes the Merchandising Operations team (MerchOps), who is responsible for item setup. In this case study, I will refer to members of this team as Merchants. This group is not a direct end user of the product, but are users within the overarching system the product belongs to.</p>
-                                        <strong>Vendors: </strong>
-                                        <p>External partners, such as L’Oreal, Unilever, and Johnson &amp; Johnson, whose products are sold on the retail site. I will refer to these individuals as vendors or vendor partners. This group is the end user of </p>
+                                        <h2>The Challenge</h2>
+                                        <p>Though many items have color swatches, no products belonged to a color family prior to this project. I outlined the following functional specifications as goals for the way the filter should work:</p>
+                                        <ul>
+                                            <li>Selecting a color from the color picker should return only products of the selected color</li>
+                                            <li>Only colors relevant to the search results will appear in the picker (so no green in lipstick if we don’t have green lipstick)</li>
+                                            <li>When users select a color from the picker, the results page will update to only show the subset of products that match the selected color</li>
+                                            <li>The user can select multiple color families to view if they choose</li>
+                                        </ul>
+                                        <h5>Why is defining color complicated?</h5>
+                                        <p>Color exists on a 2D plane, so defining a range is difficult. There are 16,777,216  possible  colors using #RRGGBB notation. To illustrate this, take a look at the color picker below. Which coordinates in the image should define "red"?</p>
                                     </div>
                                 </div>
                                 <div class="container post type-post format-standard">
                                     <div class="entry">
-                                        <h2>Discovery</h2>
-                                        <h5>Brainstorming with the Development Team</h5>
-                                        <p>While I was new to the merchandising world at the start of this project, the development team was not. Since everyone had ideas on what features to include, I decided the fastest way to get everyone on the same page and learn about the project was to hold a few workshop sessions. I flew to Washington, where the development team is located, and spent a week leading design workshops, ideating with the developers, and sketching out possible user flows.</p>
-                                        <h5>Studying the Merchandising Process</h5>
-                                        <p>Upon returning from Washington, I had enough contexts to start asking specific questions of the business stakeholder. It was then I started to understand the nuances of the manual process. 
-                                        I found that product data was being exchanged between merchants and vendors through a system of emails, spreadsheets, and FTPs. Due to a prerequisite on the brick and mortar side, vendors were required to go through certain third parties to have their product data created.
-                                        </p>
-                                        <p>I documented these findings in the form of flow charts, which I shared with the development team.</p>
-                                        <p>It was important to communicate these processes because the business saw the project through their lens, and the developers through theirs (naturally). I worked to bridge these perspectives and create a feeling of cohesive goals.</p>
-                                        <h5>Understanding End Users</h5>
-                                        <p>Since we were starting from scratch, there was no existing user data to go off of. Considering that the merchandising team and the vendors are equal partners in this process, I relied on the merchandising team’s pain points to make inferences about usability problems in the current process. For example, if we were having difficulty getting accurate ingredients lists from vendors, I would ask myself, why would this be? Perhaps the format we’re asking for ingredients in is difficult to follow, or maybe we aren’t making it clear that we need ingredients provided for certain products. I took the perspective that everything we need from vendors they would be happy to provide, quickly and accurately, because after all, they also have a stake in their products being successful on the website. I focused on how we could communicate our requirements to vendors in a way that enabled them to give us the data we needed.</p>
-                                    </div>
-                                </div>
-                                <div class="container post type-post format-standard">
-                                    <div class="entry">
-                                        <h2>Analysis</h2>
-                                        <h5>Business Flows Documentation</h5>
-                                        <p>flow screenshot</p>
-                                        <h5>Features Defintion</h5>
-                                        <p>site map</p>
-                                        <h5>End to End Process</h5>
-                                        <p>explanation of how the app will fit into existing ecosystem</p>
-                                    </div>
-                                </div>
-                                <div class="container post type-post format-standard">
-                                    <div class="entry">
-                                        <h2>Design</h2>
-                                        <h5>Wireframing</h5>
-                                        <p>wireframes</p>
-                                        <h5>Prototype</h5>
-                                        <p>prototype screenshots</p>
-                                        <h5>Usability Testing</h5>
-                                        <p></p>
-                                    </div>
-                                </div>
-                                <div class="container post type-post format-standard">
-                                    <div class="entry">
-                                        <h2>Launch Preparation</h2>
-                                        <h5>Creating Training Decks &amp; User Guides</h5>
                                         
                                     </div>
                                 </div>
-                                 <div class="container post type-post format-standard">
+                                <div class="container post type-post format-standard">
                                     <div class="entry">
-                                        <h2>Next Steps</h2>
-
+                                        <h2>Approach</h2>
+                                        <h5>Competitor Analysis</h5>
+                                        <p>While the developers worked on extracting the hex values from color swatches, I looked at competitor sites to see how they were approaching their color pickers. Based on the hits and misses of these competitors, my takeaways were:</p>
+                                        <ul>
+                                            <li>DO - make sure products are matched to color families as accurately as possible. One or two imperfect matches were forgivable, but too many mismatching made the filter seem broken.</li>
+                                            <li>DO - Make the granularity of color families and names relevant to the product categories. For example, make sure there are enough color families so the user can filter on "red" and "coral" lipsticks separately.</li>
+                                            <li>DO - label all color families with the color name.</li>
+                                        </ul>
+                                        <h5>Sorting Algorithm</h5>
+                                        <p>After a few attempts, we ultimately created a two step system:</p>
+                                        <ol>
+                                            <li>To simplify the number of colors we were sorting, we first mapped the product swatches to the 148 defined web colors
+                                                <ul>
+                                                    <li>"Web colors are colors used in displaying web pages, and the methods for describing and specifying those colors" (from <a href="" target="_blank">Wikipedia</a>). These are the colors you can write by name using CSS, such as "aliceblue" or "whitesmoke"</li>
+                                                    <li>~20 additional custom colors were used to improve matching accuracy. This was especially important for the Berry color family, which was not well represented by the web colors</li>
+                                                </ul>
+                                            </li>
+                                            <li>I then mapped the ~168 colors into the proposed color families
+                                                <ul>
+                                                    <li>To do this, I looked through a spreadsheet output of the algorithm</li>
+                                                    <li>This was ultimately 15 customer-facing color families for makeup, and 9 for hair color.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="container post type-post format-standard">
+                                    <div class="entry">
+                                        <h2>Designs</h2>
                                         
                                     </div>
                                 </div>
+                                <div class="container post type-post format-standard">
+                                    <div class="entry">
+                                        <h2>User Response</h2>
+                                        <h4>Testing</h4>
+                                        <p>The color families were A/B tested by product prior to launch. Before launching the filters to all customers, they were tested with a few customers as part of a larger usability session by our user research team. The testing yielded no issues with the filter design.</p>
+                                        <h4>Post-Launch</h4>
+                                        <p>At the time of writing, the color family filters were the 3rd most used filter</p>
+                                    </div>
+                                </div>
+                                
                                 <div class="container post type-post format-standard">
                                     <div class="entry">
                                         <h1>More Projects</h1>
