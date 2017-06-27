@@ -130,12 +130,10 @@
 	margin: 40px 0 10px;
 }
 
-.single-image {
-	margin: 50px 0;
-}
+.bordered {
+	border: 1.5px solid #333;
+	border-radius: 3px;
 
-.single-image .small {
-	margin-top: 25px;
 }
 
 .small {
