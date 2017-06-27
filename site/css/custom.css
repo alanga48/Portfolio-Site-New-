@@ -126,8 +126,25 @@
     margin-bottom: 20px;
 }
 
+.piece-details .container h2 {
+	margin: 40px 0 10px;
+}
+
+.single-image {
+	margin: 50px 0;
+}
+
+.single-image .small {
+	margin-top: 25px;
+}
+
+.small {
+	font-size: 12px;
+}
+
 @media screen and (min-width: 1100px) {
     .piece-details .container {
         width: 50%;
     }
 }
+
