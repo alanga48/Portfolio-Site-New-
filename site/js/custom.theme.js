@@ -1828,4 +1828,12 @@ function fnInitPhotoSwipeFromDOM(gallerySelector){
 	if(hashData.pid > 0 && hashData.gid > 0) {
 		openPhotoSwipe( hashData.pid - 1 ,  galleryElements[ hashData.gid - 1 ], true, true );
 	}
+
+	$('.anchors .subnav-li a').on('click', function(event){
+	    // event.preventDefault();
+	    console.log('clicked');
+	    // $('html, body').animate({
+	    //     scrollTop: $( $.attr(this, 'href') ).offset().top
+	    // }, 500);
+	});
 }
