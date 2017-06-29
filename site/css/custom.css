@@ -161,6 +161,16 @@
 	border-radius: 50%;
 }
 
+.page-template-intro-above-list-body .ux-portfolio-template-intro.container {
+    margin-bottom: 60px;
+}
+
+.logo-h1 {
+    font-size: 24px;
+    font-weight: 900;
+    font-style: normal;
+}
+
 @media screen and (min-width: 1100px) {
     .piece-details .container {
         width: 50%;
