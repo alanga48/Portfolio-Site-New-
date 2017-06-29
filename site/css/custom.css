@@ -144,6 +144,23 @@
     background-color: #fff;
 }
 
+.portfolio-box {
+	background-color: #f8dadc; /* #FF8A8F */ f8dadc
+}
+
+.contactform {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.contactform .btnarea {
+	padding-top: 15px;
+}
+
+.circle img {
+	border-radius: 50%;
+}
+
 @media screen and (min-width: 1100px) {
     .piece-details .container {
         width: 50%;
