@@ -56,10 +56,9 @@
         <![endif]-->
 
     </head>
-  
-    <body class="page page-template-default default-dark-logo pswp-light-skin responsive-ux page-template-masonry-body page-template-intro-above-list-body navi-show ux-bordered page_from_top dark-logo header-sticky Chrome59">
-
       
+    <body class="single single-post single-format-audio default-dark-logo pswp-light-skin responsive-ux navi-show dark-logo header-sticky preload">
+
         <!--Page Loader-->
         <div class="page-loading fullscreen-wrap visible">
             <div class="page-loading-inn">
@@ -102,14 +101,14 @@
 
                                     <ul class="menu clearfix">
                                         <li class="external menu-item menu-item-type-post_type menu-item-object-page">
-                                            <a href="#">Portfolio</a>
+                                            <a href="./portfolio.html">Portfolio</a>
                                             <ul class="sub-menu">
                                                 <li class="menu-item"><a href="./digital-merchandising-application.html">Digital Merchandising Application</a></li>
                                                 <li class="menu-item"><a href="./color-picker.html">Color Picker</a></li>
                                                 <li class="menu-item"><a href="./task-management-application.html">Task Management Application</a></li>
                                             </ul>
                                         </li>
-                                        <li class="external menu-item menu-item-type-post_type menu-item-object-page"><a href="./about.html">About</a></li>
+                                        <li class="external menu-item menu-item-type-post_type menu-item-object-page"><a href="./about.html"  class="selected">About</a></li>
                                         <li class="external menu-item menu-item-type-post_type menu-item-object-page"><a href="./contact.html">Contact</a></li>
                                     </ul>
 
@@ -124,7 +123,7 @@
                             <div class="logo-wrap">
                                 <div id="logo">
                                     <a class="logo-a" href="index.html" title="Air Theme">
-                                        <h1 class="logo-h1 logo-not-show-txt">Amy Langa</h1>
+                                        <h1 class="logo-h1 logo-show-txt">Amy Langa.</h1>
                                         <img class="logo-image logo-dark" src="img/demo/logo_dark.png" alt="Air Theme" />
                                         <span class="logo-light"><img class="logo-image" src="img/demo/logo_light.png" alt="Air Theme" /></span>
                                     </a>
@@ -166,77 +165,95 @@
                 <!-- Main Content : List, text content ... -->
                 <div id="content">
 
-                    <div class="content_wrap_outer fullwrap-layout">
-            
-                        <div id="content_wrap" class="">
-                            <div class="text-center menu-section text-center ux-portfolio-spacing-40 ux-portfolio-3col container">
-                                <section class="ux-portfolio-template-intro container">
-                                    <h2>About</h2>
-                                </section>
-                                <div  class="text-slider-inn">
-                                    <div class="text-center">
-                                        <div class="entry">
+                    <div class="content_wrap_outer container two-cols-layout">
 
-                                            <div class="circle">
-                                                <img src="./img/face-2.jpg" />
+                        <div class="sidebar-layout row">
+
+                            <div id="content_wrap" class="col-md-9 col-sm-9">
+
+                                <article class="container post type-post format-standard">
+
+                                    <div class="title-wrap">
+                                        <div class="title-wrap-con">
+                                            <h2 class="title-wrap-tit">About</h2>
+                                            <!-- <div class="article-meta clearfix">
+                                                <span class="article-meta-unit article-meta-unit-cate"><a href="http://themes.uiueux.com/air/category/news/media/" title="View all posts in Media" class="article-cate-a">Media</a></span>
+                                                <span class="article-meta-unit article-meta-date">ON August 1, 2016</span>    
+                                            </div> -->
+                                        </div>
+                                    </div>
+
+                                    <div class="entry">
+                                        <p>I consider myself a problem solver above all else. I research user needs, find the best problem / solution fit, and create specifications for the development team to bring the solution to life.</p><br/>
+                                        <p class="strong">I have experience in the following areas:</p>
+                                        <div class="row services-row text-center">
+                                            <div class="col-md-4 col-sm-6 col-xs-12 border-right">
+                                                <div class="services-content">
+                                                    <p class="text-upper service-title">User Experience</p>
+                                                    <ul>
+                                                        <li>Wireframing/Prototyping</li>
+                                                        <li>Usability Testing</li>
+                                                        <li>Design Research</li>
+                                                        <li>Copywriting</li>
+                                                    </ul>
+                                                </div>
                                             </div>
-                                            <p>I consider myself a problem solver above all else. I research user needs, iterate my designs to find the best problem/solution fit, and create specifications for the development team to bring the solution to life.</p>
-                                            <!-- <small>Please take a look around and if you'd like to talk or have questions about my work, please contact me at <a class="text-link" href="mailto:hello@amylanga.com">hello@amylanga.com</a></small> -->
-                                            <!-- <p>I love taking tedious processes and turning them into simplified features or applications, whether that means improving on something existing or building something brand new.</p> -->
-                                            <p></p>
+                                            <div class="col-md-4 col-sm-6 col-xs-12">
+                                                <div class="services-content">
+                                                    <p class="text-upper service-title">Design Strategy</p>
+                                                    <ul>
+                                                        <li>Stakeholder Interviews</li>
+                                                        <li>Business Analysis</li>
+                                                        <li>Requirements Gathering</li>
+                                                        <li>Feature Planning</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6 col-xs-12 border-left">
+                                                <div class="services-content">
+                                                    <p class="text-upper service-title">Web Development</p>
+                                                    <ul>
+                                                        <li>HTML &amp; CSS</li>
+                                                        <li>Javascript/JQuery</li>
+                                                        <li>PHP &amp; MySQL</li>
+                                                        <li>Version Control</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>                 
+                                    </div><!--End entry-->
+
+                                </article>
+
+                            </div><!-- End #content_wrap-->
+
+                            <!--Sidebar Widgets-->
+                            <aside id="sidebar-widget" class="col-md-3 col-sm-3 text-center">
+    
+                                <ul class="sidebar_widget">
+
+                                    <li class="widget-container widget_text">           
+                                        <div class="textwidget">
+                                            <p>
+                                                <div class="circle">
+                                                    <img src="./img/face.jpg" />
+                                                </div>
+                                            </p>
+                                            <p>Hi, I’m Amy Langa, a digital product designer located in Chicago IL.</p>
                                             <div class="btn-container">
                                                 <a class="btn btn-pink" href="./AmyLangaResume.pdf" target="_blank"><span class="ux-btn-inn">View Resume </span></a>
                                                 <a class="btn btn-pink" href="https://www.linkedin.com/in/amy-langa-3b8887105" target="_blank"><span class="ux-btn-inn">View LinkedIn </span> 
                                                 <i class="fa fa-external-link"></i></a>
                                             </div>
                                         </div>
-                                    
-                                         <div class="row">
-                                            <div class="col-md-12 col-xs-12">
-                                                <p>I have experience in the following areas:</p>
-                                            </div>
-                                        </div>
-                                        <div class="entry">
-                                            <div class="row services-row">
-                                                <div class="col-md-4 col-sm-6 col-xs-12 border-right">
-                                                    <div class="services-content">
-                                                        <p class="text-upper service-title">User Experience</p>
-                                                        <ul>
-                                                            <li>Wireframing/Prototyping</li>
-                                                            <li>Usability Testing</li>
-                                                            <li>Design Research</li>
-                                                            <li>Copywriting</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 col-sm-6 col-xs-12">
-                                                    <div class="services-content">
-                                                        <p class="text-upper service-title">Design Strategy</p>
-                                                        <ul>
-                                                            <li>Stakeholder Interviews</li>
-                                                            <li>Business Analysis</li>
-                                                            <li>Requirements Gathering</li>
-                                                            <li>Feature Planning</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 col-sm-6 col-xs-12 border-left">
-                                                    <div class="services-content">
-                                                        <p class="text-upper service-title">Web Development</p>
-                                                        <ul>
-                                                            <li>HTML &amp; CSS</li>
-                                                            <li>Javascript/JQuery</li>
-                                                            <li>PHP &amp; MySQL</li>
-                                                            <li>Version Control</li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>                                
-                                        </div>
-                                    </div>
-                                </div>                          
-                            </div>
-                        </div><!-- End #content_wrap-->
+                                    </li>
+                                </ul>
+
+                            </aside>
+
+                        </div><!--End sidebar-layout-->
+            
+                        
 
                     </div><!-- End content_wrap_outer-->
 
@@ -248,9 +265,7 @@
                         <div class="footer-container">
                             <div class="span6">
                                 <div id="logo-footer">
-                                    <a href="http://themes.uiueux.com/air/" title="Air Theme">
-                                        <img class="logo-footer-img" src="img/demo/logo_dark.png" alt="Air Theme" />
-                                    </a>
+                                    <img class="logo-footer-img" src="img/demo/logo_dark.png" alt="Air Theme" />
                                 </div>
                             </div>
 
@@ -269,7 +284,6 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
                         </div>
                     </div>
 
@@ -337,6 +351,7 @@
             </div>
 
         </div>
+
         <!-- jQuery Library -->
         <script type='text/javascript' src='js/library/jquery.min.js'></script>
         <!-- Main Js Plugin -->

@@ -67,6 +67,7 @@
 
 .service-title {
 	color: #FF8A8F;
+	font-weight: 500;
 }
 
 /*.portfolio-title {
@@ -148,17 +149,19 @@
 	background-color: #f8dadc; /* #FF8A8F */ f8dadc
 }
 
-.contactform {
+/*.contactform {
 	width: 50%;
 	margin: 0 auto;
 }
-
+*/
 .contactform .btnarea {
 	padding-top: 15px;
 }
 
 .circle img {
 	border-radius: 50%;
+    height: 150px;
+    border: 2px dotted pink;
 }
 
 .page-template-intro-above-list-body .ux-portfolio-template-intro.container {
@@ -169,7 +172,46 @@
     font-size: 24px;
     font-weight: 900;
     font-style: normal;
+    letter-spacing: normal;
 }
+
+
+body.single.responsive-ux .title-wrap {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    min-height: 20px;
+    font-size: 20px;
+}
+
+body.single .title-wrap-tit, .title-wrap-h1 {
+    font-size: 50px;
+}
+
+#navi a {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    font-family: poppins;
+    cursor: pointer;
+}
+
+.sub-menu li {
+	padding-bottom: 20px;
+}
+
+.top-slider.top-slider-text {
+    height: calc(100vh - 130px);
+}
+
+.nav-header-center {
+    text-align: center;
+}
+
+.nav-header-center #navi-header {
+    float: none !important; 
+    margin: 0 auto 0 -30px;
+}
+
 
 @media screen and (min-width: 1100px) {
     .piece-details .container {
@@ -177,3 +219,10 @@
     }
 }
 
+@media screen and (max-width: 1100px) {
+
+    .responsive-ux #header #logo .logo-h1 {
+	    font-size: 20px;
+	}
+
+}

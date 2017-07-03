@@ -56,10 +56,9 @@
         <![endif]-->
 
     </head>
-  
-    <body class="page page-template-default default-dark-logo pswp-light-skin responsive-ux page-template-masonry-body page-template-intro-above-list-body navi-show ux-bordered page_from_top dark-logo header-sticky Chrome59">
-
       
+    <body class="single single-post single-format-audio default-dark-logo pswp-light-skin responsive-ux navi-show dark-logo header-sticky preload">
+
         <!--Page Loader-->
         <div class="page-loading fullscreen-wrap visible">
             <div class="page-loading-inn">
@@ -102,14 +101,14 @@
 
                                     <ul class="menu clearfix">
                                         <li class="external menu-item menu-item-type-post_type menu-item-object-page">
-                                            <a href="#">Portfolio</a>
+                                            <a href="./portfolio.html">Portfolio</a>
                                             <ul class="sub-menu">
                                                 <li class="menu-item"><a href="./digital-merchandising-application.html">Digital Merchandising Application</a></li>
                                                 <li class="menu-item"><a href="./color-picker.html">Color Picker</a></li>
                                                 <li class="menu-item"><a href="./task-management-application.html">Task Management Application</a></li>
                                             </ul>
                                         </li>
-                                        <li class="external menu-item menu-item-type-post_type menu-item-object-page"><a href="./about.html">About</a></li>
+                                        <li class="external menu-item menu-item-type-post_type menu-item-object-page"><a href="./about.html"  class="selected">About</a></li>
                                         <li class="external menu-item menu-item-type-post_type menu-item-object-page"><a href="./contact.html">Contact</a></li>
                                     </ul>
 
@@ -124,7 +123,7 @@
                             <div class="logo-wrap">
                                 <div id="logo">
                                     <a class="logo-a" href="index.html" title="Air Theme">
-                                        <h1 class="logo-h1 logo-not-show-txt">Amy Langa</h1>
+                                        <h1 class="logo-h1 logo-show-txt">Amy Langa.</h1>
                                         <img class="logo-image logo-dark" src="img/demo/logo_dark.png" alt="Air Theme" />
                                         <span class="logo-light"><img class="logo-image" src="img/demo/logo_light.png" alt="Air Theme" /></span>
                                     </a>
@@ -166,13 +165,22 @@
                 <!-- Main Content : List, text content ... -->
                 <div id="content">
 
-                    <div class="content_wrap_outer fullwrap-layout">
-            
-                        <div id="content_wrap" class="">
-                            <div class="text-center menu-section text-center ux-portfolio-spacing-40 ux-portfolio-3col container" id="contact">
-                                <div class="entry">
-                                    <div class="title">
-                                        <h2>Contact</h2>
+                    <div class="content_wrap_outer container two-cols-layout">
+
+                        <div class="sidebar-layout row">
+
+                            <div id="content_wrap" class="col-md-9 col-sm-12">
+
+                                <article class="container post type-post format-standard">
+
+                                    <div class="title-wrap">
+                                        <div class="title-wrap-con">
+                                            <h2 class="title-wrap-tit">Contact</h2>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="entry">
                                         <p>Let's get in touch</p>
                                         <div class="container-fluid">
                                             <div class="contactform ux-mod-nobg">
@@ -184,11 +192,16 @@
                                                     <div class="btnarea"><input type="submit" id="idi_send" name="idi_send" value="SEND" class=" btn btn-pink"/></div>
                                                 </form>
                                             </div>   
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div><!-- End #content_wrap-->
+                                        </div>             
+                                    </div><!--End entry-->
+
+                                </article>
+
+                            </div><!-- End #content_wrap-->
+
+                        </div><!--End sidebar-layout-->
+            
+                        
 
                     </div><!-- End content_wrap_outer-->
 
@@ -200,9 +213,7 @@
                         <div class="footer-container">
                             <div class="span6">
                                 <div id="logo-footer">
-                                    <a href="http://themes.uiueux.com/air/" title="Air Theme">
-                                        <img class="logo-footer-img" src="img/demo/logo_dark.png" alt="Air Theme" />
-                                    </a>
+                                    <img class="logo-footer-img" src="img/demo/logo_dark.png" alt="Air Theme" />
                                 </div>
                             </div>
 
@@ -221,7 +232,6 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </div>
                         </div>
                     </div>
 
@@ -289,6 +299,7 @@
             </div>
 
         </div>
+
         <!-- jQuery Library -->
         <script type='text/javascript' src='js/library/jquery.min.js'></script>
         <!-- Main Js Plugin -->
