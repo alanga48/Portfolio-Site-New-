@@ -38,6 +38,12 @@
 	margin: 0 5px;
 }
 
+.btn.btn-pink:hover, input[type="submit"]:hover {
+	color: white;
+	background-color: #de666b;
+	border: 0;
+}
+
 .btn-container {
 	margin: 60px 0;
 }
@@ -161,7 +167,7 @@
 .circle img {
 	border-radius: 50%;
     height: 150px;
-    border: 2px dotted pink;
+    border: 2px dotted #FF8A8F;
 }
 
 .page-template-intro-above-list-body .ux-portfolio-template-intro.container {
@@ -173,6 +179,12 @@
     font-weight: 900;
     font-style: normal;
     letter-spacing: normal;
+}
+
+.error {
+	font-size: 14px;
+
+	color: #FF8A8F;
 }
 
 
@@ -210,6 +222,33 @@ body.single .title-wrap-tit, .title-wrap-h1 {
 .nav-header-center #navi-header {
     float: none !important; 
     margin: 0 auto 0 -30px;
+}
+
+
+/*.entry p a {
+	color: #FF8A8F;
+}
+
+.entry p a:hover {
+	color: #de666b;
+}*/
+
+body.single.responsive-ux .title-wrap {
+    margin-bottom: 20px;
+}
+
+.reflections {
+	background-color: #f8dadc;
+    padding: 25px;
+    font-size: 15px;
+}
+
+.reflections h5 {
+	letter-spacing: normal;
+}
+
+.reflections li {
+	margin: 30px;
 }
 
 

@@ -181,15 +181,35 @@
                                     </div>
 
                                     <div class="entry">
-                                        <p>Let's get in touch</p>
+                                        <h4>Let's get in touch</h4>
                                         <div class="container-fluid">
                                             <div class="contactform ux-mod-nobg">
-                                                <form action="contact.php" id="contact-form" class="contact_form" method="POST">
+                                                <!-- <form action="contact.php" id="contact-form" class="contact_form" method="POST">
                                                     <p class="span6"><input type="text" id="idi_name" name="idi_name" class="requiredField" value="Name" onBlur="if (this.value =='' ) {this.value = 'Name';}" onFocus="if (this.value == 'Name' || this.value == 'Required' ) { this.value = ''; }" /></p>
                                                     <p class="span6"><input type="text" id="idi_mail" name="idi_mail" class="requiredField email" value="Email" onBlur="if (this.value =='' ) {this.value = 'Email';}" onFocus="if (this.value == 'Email' || this.value  == 'Required' || this.value == 'Invalid email' ) {this.value = '';}" /></p>
                                                     <p><textarea rows="4" name="idi_text" id="idi_text" cols="4" class="requiredField inputError"  onfocus="if(this.value==this.defaultValue|| this.value  == 'Required'){this.value='';}" onblur="if(this.value==''){this.value=this.defaultValue;}" >YOUR MESSAGE</textarea></p>
                                                     <input type="hidden" class="info-tip" value="send" name="contact_form" data-message="Done!" data-sending="Sending" data-error="Please Enter Correct Verification Number" />
                                                     <div class="btnarea"><input type="submit" id="idi_send" name="idi_send" value="SEND" class=" btn btn-pink"/></div>
+                                                </form> -->
+                                                <form action="contact.php" id="contact-form" class="contact_form" method="POST">
+                                                    <p class="span6">
+                                                        <span class="hidden error">Please enter a name</span>
+                                                        <input type="text" id="idi_name" name="idi_name" placeholder="Name" />
+                                                    </p>
+                                                    <p class="span6">
+                                                        <span class="error hidden">Please enter a valid email address</span>
+                                                        <input type="text" id="idi_mail" name="idi_mail" class="email" placeholder="Email" />
+                                                    </p>
+                                                    <p>
+                                                        <span class="error hidden">Please enter a message</span>
+                                                        <textarea rows="4" name="idi_text" id="idi_text" cols="4" placeholder="Your message"></textarea>
+                                                    </p>
+                                                    
+                                                    <div class="btnarea">
+                                                        <input type="submit" id="idi_send" name="idi_send" value="SEND" class="btn btn-pink"/>
+                                                        <span class="success hidden strong">Thanks for your message! I'll get back to you soon.</span>
+                                                    </div>
+                                                    <p class="error hidden strong">Your message could not be sent. If you continue to encounter issues, please email me directly at hello@amylanga.com</p>
                                                 </form>
                                             </div>   
                                         </div>             
@@ -306,6 +326,8 @@
         <script type='text/javascript' src='js/main.min.js'></script>
         <!-- Air. Theme main js -->
         <script type='text/javascript' src='js/custom.theme.js'></script>
+
+         <script type='text/javascript' src='js/custom.js'></script>
 
     </body>
 </html>
