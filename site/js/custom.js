@@ -1,7 +1,7 @@
 jQuery(document).ready(function($){
 
-	$('#contact-form input').on('focus', function() {
-		$('.success').addClass('hidden');
+	$('#contact-form input, #contact-form textarea').on('focus', function() {
+		$('.success, .error').addClass('hidden');
 	});
 
 	$('#idi_send').click(function(e) {
@@ -29,15 +29,14 @@ jQuery(document).ready(function($){
 		        url: 'contact.php',
 		        type:'POST',
 		        data: data,
-		        success: function(msg) {
-		            $('#idi_send').next('.success').removeClass('hidden').val('SEND').removeAttr('disabled');
-		            $('#idi_send').val('SEND').removeAttr('disabled');
+		        success: function(error) {
+		        	$('#idi_send').val('SEND').removeAttr('disabled');
+		        	error === 'false' ? $('#idi_send').next('.success').removeClass('hidden') : $('#idi_send').parent('.btnarea').next('.error').removeClass('hidden');
 		        },
-		        error: function (xhr, ajaxOptions, thrownError) {
+		        error: function (data) {
 			       $('#idi_send').parent('.btnarea').next('.error').removeClass('hidden');
-			     }          
+			    }          
 		    });
-		    $('#idi_send').val('SEND').removeAttr('disabled').next('.success').removeClass('hidden');
 	    }
 	});
 });
