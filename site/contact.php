@@ -17,9 +17,9 @@
 
 	    if(!$error) {
 	    	$mailTo = 'hello@amylanga.com';
-			$subject = 'Message from Hello';
+			$subject = 'Message from Portfolio Site';
 			$message =  'From: '.$name.'; Email: '.$email.' ; Message: '.$message_text;
-			$headers .= 'From:' . $mailFrom . '\r\n';
+			$headers .= 'From:' . $mailFrom . 'Hello@AmyLanga.com';
 			mail($mailTo, $subject, $message, $headers);
 	    }
 	   
